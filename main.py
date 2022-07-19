@@ -1,5 +1,5 @@
 import os
-for path, subdirs, files in os.walk(env.folderPath):
+for path, subdirs, files in os.walk(params.path):
     for name in files:
         print(os.path.join(path, name))
 
