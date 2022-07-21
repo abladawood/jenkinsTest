@@ -1,6 +1,7 @@
 import os
-for path, subdirs, files in os.walk($folderPath):
-    for name in files:
-        print(os.path.join(path, name))
-
+filePath = '/Users/ablosh/Desktop/Semester B'
+for path,subdir,files in os.walk(filePath):
+    for file in files:
+        for subfile in file:
+            print(os.path.join(subfile,file,path))
 
