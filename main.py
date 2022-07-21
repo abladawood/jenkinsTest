@@ -1,4 +1,6 @@
 import os
+import sys
+print(sys.argv)
 filePath = '/Users/ablosh/Desktop/Semester B'
 for path,subdir,files in os.walk(filePath):
     for file in files:
